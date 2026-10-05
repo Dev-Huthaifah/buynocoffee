@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout – BuyNoCoffee</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚫</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav><div class="wrap nv">
+  <a class="logo" href="index.html"><span>🚫☕</span><span>Buy<b>No</b>Coffee</span></a>
+  <div class="tools">
+    <button class="ghost" id="lang" aria-label="Language">العربية</button>
+    <button class="ghost" id="theme" aria-label="Toggle theme">☀️</button>
+  </div>
+</div></nav>
+<main class="wrap"><section class="pg">
+<h2 data-i="pt"></h2><p class="sub" data-i="ps"></p>
+<div id="none" class="glass empty" hidden><p data-i="nodraft"></p><a class="btn" style="text-decoration:none" href="index.html#join" data-i="tojoin"></a></div>
+<div class="join" id="order">
+  <div class="glass cardbox"><canvas id="card" width="1000" height="600" role="img" aria-label="Membership card"></canvas><p class="note" id="sname"></p></div>
+  <div class="glass sumbox">
+    <h3 data-i="sum"></h3>
+    <div class="line"><span data-i="item"></span><b>$1.00</b></div>
+    <div class="line tot"><span data-i="total"></span><b>$1.00 USD</b></div>
+    <button class="pm apple" data-i="ap"></button>
+    <div class="or" data-i="or"></div>
+    <button class="btn pm" data-i="cardpay"></button>
+    <p class="note" data-i="secure"></p>
+    <p class="note" id="demo" data-i="demo"></p>
+    <a class="ghost" href="index.html#join" data-i="edit"></a>
+  </div>
+</div>
+</section></main>
+<footer><div class="wrap">
+  <p data-i="disc"></p>
+  <nav><a href="#" data-cfg="TRACKER_URL" data-i="bip"></a><a href="#" data-cfg="GITHUB_URL" data-i="gh"></a></nav>
+  <p>© 2026 BuyNoCoffee</p>
+</div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/card.js"></script>
+<script src="js/pay.js"></script>
+</body>
+</html>

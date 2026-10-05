@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://buynocoffee.com/sitemap.xml

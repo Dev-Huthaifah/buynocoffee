@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Membership card – BuyNoCoffee</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚫</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav><div class="wrap nv">
+  <a class="logo" href="index.html"><span>🚫☕</span><span>Buy<b>No</b>Coffee</span></a>
+  <div class="tools">
+    <button class="ghost" id="lang" aria-label="Language">العربية</button>
+    <button class="ghost" id="theme" aria-label="Toggle theme">☀️</button>
+  </div>
+</div></nav>
+<main class="wrap"><section class="pg">
+<div id="found" hidden>
+  <h2 id="wel"></h2><p class="sub" data-i="mt"></p>
+  <div class="join">
+    <div class="glass cardbox">
+      <canvas id="card" width="1000" height="600" role="img" aria-label="Membership card"></canvas>
+      <div class="acts">
+        <button class="btn" id="dl" data-i="dl"></button>
+        <button class="btn" id="sh" data-i="sh"></button>
+      </div>
+    </div>
+    <div class="glass sumbox">
+      <h3 id="mnum"></h3>
+      <div class="line"><span data-i="issued"></span><b id="mdate"></b></div>
+      <div class="line"><span data-i="bdg"></span><b id="mbdg"></b></div>
+      <div class="line"><span data-i="mot"></span><b id="mmsg"></b></div>
+      <button class="ghost" id="cp" data-i="copy"></button>
+      <a class="ghost" href="index.html#wall" data-i="wallb"></a>
+    </div>
+  </div>
+</div>
+<div id="nf" class="glass empty" hidden><h2 data-i="mnf"></h2><p data-i="mnfd"></p><a class="btn" style="text-decoration:none" href="index.html#join" data-i="joinb"></a></div>
+</section></main>
+<footer><div class="wrap">
+  <p data-i="disc"></p>
+  <nav><a href="#" data-cfg="TRACKER_URL" data-i="bip"></a><a href="#" data-cfg="GITHUB_URL" data-i="gh"></a></nav>
+  <p>© 2026 BuyNoCoffee</p>
+</div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/card.js"></script>
+<script src="js/member.js"></script>
+</body>
+</html>

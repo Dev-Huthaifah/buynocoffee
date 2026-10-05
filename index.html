@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BuyNoCoffee – Skip the caffeine. Claim digital immortality for $1.</title>
+<meta name="description" content="Pay $1 to skip a coffee and secure your spot on the Wall of Digital Immortality. Get your official membership card.">
+<meta name="theme-color" content="#120d08">
+<link rel="canonical" href="https://buynocoffee.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BuyNoCoffee">
+<meta property="og:url" content="https://buynocoffee.com/">
+<meta property="og:title" content="BuyNoCoffee – Skip the caffeine. Claim digital immortality for $1.">
+<meta property="og:description" content="Skip a coffee, join the Wall of Digital Immortality, and get a shareable gold membership card.">
+<meta property="og:image" content="https://buynocoffee.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BuyNoCoffee – Skip the caffeine. Claim digital immortality for $1.">
+<meta name="twitter:description" content="Skip a coffee, join the Wall of Digital Immortality, and get a shareable gold membership card.">
+<meta name="twitter:image" content="https://buynocoffee.com/og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚫</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav><div class="wrap nv">
+  <a class="logo" href="#top"><span>🚫☕</span><span>Buy<b>No</b>Coffee</span></a>
+  <div class="stats" aria-live="polite">
+    <div><strong id="s1">0</strong><span data-i="members"></span></div>
+    <div><strong id="s2">0</strong><span data-i="saved"></span></div>
+    <div><strong id="s3">$0</strong><span data-i="raised"></span></div>
+  </div>
+  <div class="tools">
+    <button class="ghost" id="lang" aria-label="Language">العربية</button>
+    <button class="ghost" id="theme" aria-label="Toggle theme">☀️</button>
+  </div>
+</div></nav>
+
+<main id="top">
+<div class="wrap hero">
+  <div>
+    <h1 data-i="h1"></h1>
+    <p class="slogan" data-i="slogan"></p>
+    <button class="btn" id="cta" data-i="cta"></button>
+  </div>
+  <div class="glass cmp" aria-label="Coffee vs digital spot">
+    <div class="row cof"><small><span data-i="c1"></span><b>$5</b></small><div class="bar"><i></i></div></div>
+    <div class="row imm"><small><span data-i="c2"></span><b>$1</b></small><div class="bar"><i></i></div></div>
+    <p data-i="c3"></p>
+  </div>
+</div>
+
+<section id="join"><div class="wrap">
+  <h2 data-i="jt"></h2><p class="sub" data-i="js"></p>
+  <div class="join">
+    <form class="glass" id="f" novalidate>
+      <label><span data-i="fn"></span><input id="name" maxlength="30" autocomplete="off" data-p="fnp"></label>
+      <label><span data-i="fm"></span><input id="msg" maxlength="60" autocomplete="off" data-p="fmp"><span class="cnt" id="cnt">0/60</span></label>
+      <div><span style="font-size:14px;font-weight:500" data-i="fe"></span><div class="emo" id="emo" role="group" style="margin-top:6px"></div></div>
+      <div class="err" id="err" role="alert"></div>
+      <div class="pay"><button class="btn" id="payb" type="submit" data-i="cont"></button></div>
+    </form>
+    <div class="glass cardbox">
+      <canvas id="card" width="1000" height="600" role="img" aria-label="Membership card"></canvas>
+      <p class="note" id="cardnote" data-i="preview"></p>
+    </div>
+  </div>
+</div></section>
+
+<section id="wall"><div class="wrap">
+  <h2 data-i="wt"></h2><p class="sub" data-i="ws"></p>
+  <div class="ctl">
+    <input id="q" type="search" data-p="search" aria-label="Search">
+    <button class="ghost on" data-f="all" data-i="fa"></button>
+    <button class="ghost" data-f="gold" data-i="fg"></button>
+    <button class="ghost" data-f="link" data-i="fl"></button>
+  </div>
+  <div id="list"></div><div id="sentinel" style="height:1px"></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p data-i="disc"></p>
+  <nav><a href="#" data-cfg="TRACKER_URL" data-i="bip"></a><a href="#" data-cfg="GITHUB_URL" data-i="gh"></a></nav>
+  <p>© 2026 BuyNoCoffee</p>
+</div></footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/card.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
